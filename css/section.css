@@ -1,0 +1,121 @@
+.contSection{
+    box-sizing: border-box;
+    width: 94%;
+    margin: auto;
+}
+.contSection h2{
+    text-align: center;
+    margin: 8% 0;
+}
+.contSection section{
+    background-color: rgb(209, 154, 184);
+    padding: 1% 5% 5%;
+    margin: 10% 0%;
+    padding-bottom: 12%;
+    -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.5); 
+}
+.contImgText{
+    display: flex;
+    flex-direction: column;
+}
+.contImgText img{
+    width: 35%;
+    height: 20%;
+    margin:auto;
+}
+
+.contSection section h3{
+    text-align: center;
+}
+
+.contImgText{
+    margin-bottom: 5%;
+}
+.contSection section a{
+    text-decoration: none;
+    color: var(--colorB);
+    padding: 2%;
+    background-color: var(--colorA);
+    border: 1px solid grey;
+    border-radius: 5%; 
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(0,0,0,0.35); 
+    box-shadow: 0px 0px 4px 3px rgba(82, 64, 64, 0.35); 
+}
+/********************************************************************************************************/
+/********************************************************************************************************/
+
+/********************  720 X 1024 ****************************/
+@media (min-width: 720px){
+    /*OK*/
+}
+/********************  1024 X 1366****************************/
+@media (min-width: 1024px){
+    /*OK*/
+}
+
+/********************  1280 X 800***************************//* mouse*/
+@media (min-width: 1280px){
+    .contSection{
+        width: 90%;
+    }
+    .contSection section{
+        padding: 1% 5% 5%;
+        padding-bottom: 10%;
+        margin: 4% 0%;
+        transition: 0.5s;
+    }
+    .contImgText{
+        flex-direction: row;
+    }
+    .contImgText img{
+        width: 20%;
+        height: 20%;
+        margin-right: 5%;
+    }
+    .contImgText img{
+        width: 20%;
+        height: 20%;
+        margin-right: 5%;
+    }
+    
+    .contSection section a{
+        float: right;
+    }
+    /**/    /**/
+    .contSection section:hover{
+        background-color: lightyellow;
+    }
+    section{
+        transition: 0.3s;
+    }
+    section:hover{
+        -webkit-box-shadow: 0px 0px 13px 7px rgba(0,0,0,0.4); 
+        box-shadow: 0px 0px 13px 7px rgba(0,0,0,0.4);
+    }
+    .contSection section a{ 
+        transition: 0.3s;
+    }
+    .contSection section a:hover{ 
+        color: var(--colorA);
+        background-color: var(--colorB);
+        -webkit-box-shadow: 0px 0px 7px 8px rgba(0,0,0,0.2); 
+        box-shadow: 0px 0px 7px 8px rgba(82, 64, 64, 0.2); 
+    }
+}
+/********************  1440 X ...***************************/
+@media (min-width: 1440px){
+    .contSection section{
+        padding-bottom: 8%;
+    }
+    .contSection{
+        width: 85%;
+    }
+    
+}
+/********************  1600 X ...***************************/
+@media (min-width: 1600px){
+    .contSection{
+        width: 70%;
+    }
+}

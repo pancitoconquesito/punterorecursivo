@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/iconoPunteroRecursivo.ico" />
+
+    <title>Registro</title>
+
+    <!-- Info Meta -->
+    <meta name="description" content="pagina que te enseña como fue creada." />
+  	<meta name="keywords" content="html, css, js, javascript, php, tutorial" />
+	<meta name="author" content="Gonzalo & Ignacio" />
+    <meta name="robots" content="index" />
+     
+    <!-- Hojas de Estilos -->
+    <link rel="stylesheet" href="css/normalizer.css">
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/section.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <!-- fuentes -->
+        <!--ubuntu-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="cont">
+            <div id="logoImg">
+              <img src="img/logo.png" alt="logo de pagina">  
+              <h1>Puntero Recursivo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Portada</a></li>
+                    <li><a href="secciones.html">Secciones</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="contSection">
+        <h2>Registro</h2>
+        <img src="img/registro.png" alt="imganen registro">
+        <form action="php/registro.php" method="POST">
+            <input type="text" name="nickname" placeholder="Ingrese su nickname" required>
+            <input type="password" name="clave" placeholder="Ingrese clave" required>
+            <input type="password" name="clave" placeholder="Ingresenuevamente su clave" required>
+            <input type="email" name="correo" placeholder="Ingrese correo electronico" required>
+            <input type="submit" value="-Registrar-">
+        </form>
+        
+    </div>
+    <footer>
+        <p>Copyright &copy <span>Puntero Recursivo</span> , 2021.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
